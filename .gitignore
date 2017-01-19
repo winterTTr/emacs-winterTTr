@@ -22,3 +22,4 @@ var/
 README.W32
 .emacs.d/elpa/
 
+.emacs.d/ac-comphist.dat
