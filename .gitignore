@@ -16,4 +16,9 @@ info/
 leim/
 lisp/
 site-lisp/
+share/
+libexec/
+var/
 README.W32
+.emacs.d/elpa/
+

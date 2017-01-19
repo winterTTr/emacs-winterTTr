@@ -20,7 +20,7 @@
 (global-font-lock-mode t)
 
 ;; remove toolbar/menu bar/scroll bar
-;(tool-bar-mode 0)
+(tool-bar-mode 0)
 ;(menu-bar-mode 0)
 ;(set-scroll-bar-mode nil)
 
@@ -123,8 +123,8 @@
           (if w/os:win64p
               "C:/Program Files (x86)/Git/bin"
             "C:/Program Files/Git/bin")
-          "~/.emacs.d/extra-bin/gnuwin32"
-          "~/.emacs.d/extra-bin/unix-utils-bin"
+          "~/.emacs.d/w-binaries/gnuwin32"
+          "~/.emacs.d/w-binaries/unix-utils-bin"
           "~/bin"))))
 
 ;; time stamp support
