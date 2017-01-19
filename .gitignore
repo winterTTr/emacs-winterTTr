@@ -3,3 +3,17 @@
 
 # Packaging
 .cask
+
+
+# Emacs Packages
+BUGS
+COPYING
+LICENSE
+README
+bin/
+etc/
+info/
+leim/
+lisp/
+site-lisp/
+README.W32
