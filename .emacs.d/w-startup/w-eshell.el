@@ -12,7 +12,7 @@
 (setq eshell-prefer-lisp-functions nil)
 
 
-(defun wttr/eshell:git-branch-string (path)
+(defun w/eshell:git-branch-string (path)
   "Returns current git branch as a string, or the empty string if
 PATH is not in a git repo (or the git command is not found)."
   (interactive)
@@ -26,7 +26,7 @@ PATH is not in a git repo (or the git command is not found)."
       (lambda ()
         (concat
          (abbreviate-file-name (eshell/pwd))
-         (let ((branch (wttr/eshell:git-branch-string (eshell/pwd))))
+         (let ((branch (w/eshell:git-branch-string (eshell/pwd))))
            (if branch (concat " ➦" branch ) ""))
          "\n"
          "> ")))

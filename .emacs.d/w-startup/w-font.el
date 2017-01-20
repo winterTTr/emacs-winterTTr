@@ -7,7 +7,7 @@
 
 
 (defconst w/font:ascii-font-candidates
-  '("Cousine" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas"))
+  '("Menlo" "Cousine" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas"))
 
 
 (defconst w/font:non-ascii-font-candidates
