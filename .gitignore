@@ -24,3 +24,5 @@ README.W32
 
 .emacs.d/ac-comphist.dat
 .emacs.d/history
+.emacs.d/.emacs-places
+.emacs.d/recentf

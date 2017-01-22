@@ -52,4 +52,7 @@
       helm-ff-file-name-history-use-recentf t)
 
 
+(global-set-key (kbd "C-o") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-mini)
+
 (helm-mode 1)

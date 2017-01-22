@@ -22,7 +22,7 @@
 ;; remove toolbar/menu bar/scroll bar
 (tool-bar-mode 0)
 ;(menu-bar-mode 0)
-;(set-scroll-bar-mode nil)
+(set-scroll-bar-mode nil)
 
 ;; show clock at statusline
 (display-time-mode t)
@@ -105,6 +105,7 @@
 (setq mouse-wheel-follow-mouse 't)                    ;; scroll window under mouse
 (setq scroll-step 1)                                  ;; keyboard scroll one line at a time
 (setq scroll-margin 0)                                ;; stop autoscroll when mouse is close to margin
+(setq-default cursor-type 'bar)
 
 ;; not use tab, use space to indent
 (setq-default indent-tabs-mode nil)

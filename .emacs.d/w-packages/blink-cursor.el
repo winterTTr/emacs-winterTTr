@@ -2,4 +2,4 @@
 
 ;; turn off blinding cursor 
 (when (fboundp 'blink-cursor-mode)
-  (blink-cursor-mode -1)) 
+  (blink-cursor-mode 1)) 
