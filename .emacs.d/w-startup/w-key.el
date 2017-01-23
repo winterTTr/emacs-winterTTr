@@ -29,6 +29,11 @@
         (call-interactively 'comint-send-input)))))
 (global-set-key (kbd "<C-S-f6>") 'kid-switch-to-shell)
 
+
+
+(defun replace-in-string (what with in)
+  (replace-regexp-in-string (regexp-quote what) with in nil 'literal))
+
 ;; open file in current buffer from outer explorer
 (defun w32-open-current-file-in-explorer ()
   "open the current buffer file in windows explorer"
@@ -38,7 +43,7 @@
       (w32-shell-execute
        nil
        "explorer.exe"
-       (concat "/e,/select," (replace-in-string file "/" "\\\\") )))))
+       (concat "/e,/select," (replace-in-string "/" "\\" file) )))))
 (global-set-key (kbd "<C-f5>") 'w32-open-current-file-in-explorer)
 
 ; open external shell from current file directory
@@ -64,6 +69,11 @@
     (kill-new bn)
     (message "Buffer name copied: %s" bn)))
 (global-set-key (kbd "<M-f5>") 'w/w32:copy-current-file-name)
+
+
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-f") 'isearch-forward)
+(define-key isearch-mode-map (kbd "C-f") 'isearch-repeat-forward)
 
 
 (provide 'w-key)

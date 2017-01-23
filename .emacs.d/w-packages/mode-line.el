@@ -187,10 +187,10 @@ and BG-COLOR to be the background color"
               'display
               (w/mode-line:create-eight-trigrams-xpm face)))
 
-(unless (package-installed-p 'nyan-mode)
-  (package-install 'nyan-mode))
+(use-package nyan-mode
+  :config 
+  (require 'nyan-mode))
 
-(require 'nyan-mode)
 (setq-default mode-line-format
               (list
                '(:eval (propertize (concat "%e"

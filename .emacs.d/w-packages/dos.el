@@ -1,8 +1,6 @@
 ;; -*- coding: utf-8 -*-
+(use-package dos
+  :mode 
+  (("\\.bat$" . dos-mode)
+   ("\\.cmd$" . dos-mode)))
 
-(unless (package-installed-p 'dos)
-  (package-install 'dos))
-
-(autoload 'dos-mode "dos" "Edit Dos scripts." t)
-(add-to-list 'auto-mode-alist '("\\.bat$" . dos-mode))
-(add-to-list 'auto-mode-alist '("\\.cmd$" . dos-mode))

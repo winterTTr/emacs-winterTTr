@@ -1,22 +1,25 @@
 ;; -*- coding: utf-8 -*-
 
-;(unless (package-installed-p 'color-theme-modern)
-;  (package-install 'color-theme-modern))
-;(require 'color-theme-subdued)
-;(color-theme-subdued)
-;(load-theme 'subdued t t)
-;(enable-theme 'subdued)
-;(load-theme 'taylor t t)
-;(enable-theme 'taylor)
+;(use-package color-theme-modern
+;  :config
+;  (load-theme 'subdued t t)
+;  (enable-theme 'subdued))
 
 
-;(unless (package-installed-p 'molokai-theme)
-;  (package-install 'molokai-theme))
-;(load-theme 'molokai t t)
-;(enable-theme 'molokai)
+;(use-package color-theme-modern
+;  :config
+;  (load-theme 'taylor t t)
+;  (enable-theme 'taylor))
 
-(unless (package-installed-p 'sublime-themes)
-  (package-install 'sublime-themes))
-(load-theme 'fogus t)
+;(use-package molokai-theme
+;  :config
+;  (load-theme 'molokai t t)
+;  (enable-theme 'molokai))
+
+
+(use-package sublime-themes
+  :config
+  (load-theme 'fogus t t)
+  (enable-theme 'fogus))
 
 (provide 'w-color-theme)

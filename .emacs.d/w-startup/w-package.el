@@ -11,6 +11,12 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
+; using use package
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(setq use-package-always-ensure t)
+
+
 (require 'cl)
 (loop for file in (directory-files "~/.emacs.d/w-packages" t "\\.el$")
       do (load file nil nil t))
