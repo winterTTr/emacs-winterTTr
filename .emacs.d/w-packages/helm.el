@@ -26,7 +26,6 @@
    ("C-c o"     . helm-find-files)
    ("C-x f"     . helm-find-files)
    ("C-x C-f"   . helm-find-files)
-   ("C-x b"     . helm-mini)
    ("C-;"       . helm-mini)
    ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
    ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
