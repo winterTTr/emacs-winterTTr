@@ -110,7 +110,7 @@ static char * XPM_IMAGE[] = {
                                          (concat "\"" x "\""))
                                      generated-data
                                      ",\n"))
-                  'xpm t :ascent 'center)))
+                  'xpm t :ascent 'center :mask nil :conversion nil)))
 
 
 
