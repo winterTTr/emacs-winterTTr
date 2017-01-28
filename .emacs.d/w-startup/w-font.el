@@ -14,7 +14,7 @@
   '("文泉驿等宽微米黑" "Microsoft YaHei" "MS Gothic"))
 
 
-(defconst w/font:default-font-size 16)
+(defconst w/font:default-font-size 14)
 
 
 (defun w/font:existp (font-name)
@@ -28,7 +28,7 @@
                                w/font:non-ascii-font-candidates))
       fontset)
   (when ascii-font
-    (set-face-font 'default (font-spec :family ascii-font :size 16))
+    (set-face-font 'default (font-spec :family ascii-font :size w/font:default-font-size))
     (message "Select ascii font: %s" ascii-font))
 
   (when non-ascii-font
