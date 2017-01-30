@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: hexo center quote
+# key: hexo-cq
+# contributor: winterTTr <winterTTr@gmail.com>
+# group: hexo
+# --
+{% centerquote %} $0 {% endcenterquote %}

@@ -3,6 +3,7 @@
 (use-package popup
   :config
   (require 'popup))
+
 (use-package recentf
   :config
   (recentf-mode 1))
@@ -12,21 +13,27 @@
   (require 'helm)
   (require 'helm-config)
   (setq helm-buffers-fuzzy-matching           t
+        helm-M-x-fuzzy-match                  t
         helm-recentf-fuzzy-match              t
         helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
         helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
         helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
         helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
+        helm-echo-input-in-header-line        t ; 
         helm-ff-file-name-history-use-recentf t)
   (helm-mode 1)
+  (setq helm-autoresize-max-height 0)
+  (setq helm-autoresize-min-height 50)
+  (helm-autoresize-mode t)
   :bind
   (("M-x"       . helm-M-x)
    ("M-y"       . helm-show-kill-ring)
+   ("C-;"       . helm-mini)
    ("C-x b"     . helm-mini)
    ("C-c o"     . helm-find-files)
+   ("C-c C-o"   . helm-find-files)
    ("C-x f"     . helm-find-files)
    ("C-x C-f"   . helm-find-files)
-   ("C-;"       . helm-mini)
    ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
    ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
    ;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.

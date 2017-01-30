@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: hexo block quote
+# key: hexo-bq
+# contributor: winterTTr <winterTTr@gmail.com>
+# group: hexo
+# --
+{% blockquote ${1:author}${2:,source} ${3:link} ${4:link title} %}
+$0
+{% endblockquote %}
