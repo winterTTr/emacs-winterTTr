@@ -6,15 +6,19 @@
     (setq w32-enable-synthesized-fonts t))
 
 
-(defconst w/font:ascii-font-candidates
-  '("Menlo" "Cousine" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas"))
-
-
 (defconst w/font:non-ascii-font-candidates
   '("文泉驿等宽微米黑" "Microsoft YaHei" "MS Gothic"))
 
-
-(defconst w/font:default-font-size 14)
+(cond
+ (w/os:macp
+  (defconst w/font:default-font-size 14)
+  (defconst w/font:ascii-font-candidates
+    '("Menlo" "Cousine" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas")))
+ (w/os:windowsp
+  (defconst w/font:default-font-size 15)
+  (defconst w/font:ascii-font-candidates
+    '("Cousine" "Menlo" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas"))
+  ))
 
 
 (defun w/font:existp (font-name)

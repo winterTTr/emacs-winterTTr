@@ -26,3 +26,4 @@ README.W32
 .emacs.d/history
 .emacs.d/.emacs-places
 .emacs.d/recentf
+/.emacs.d/server/server

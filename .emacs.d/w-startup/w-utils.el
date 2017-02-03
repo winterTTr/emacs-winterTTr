@@ -7,6 +7,9 @@
 (defconst w/os:linuxp (eq system-type 'gnu/linux)
   "if current operation system is linux")
 
+(defconst w/os:macp (eq system-type 'darwin)
+  "if current operation system is mac os")
+
 (defconst w/os:win32p (and w/os:windowsp
                               (not (getenv "PROGRAMW6432")))
   "if current operation system is windows 32bit version")
@@ -21,7 +24,7 @@
 (defconst w/host:HOMEp (string-equal system-name "WTTR-HOME-T61")
   "if the current host is home laptop")
 
-(defconst w/plugin:base-directory "~/.emacs.d/plugins-subtree"
+(defconst w/plugin:base-directory "~/.emacs.d/w-3rd-packages"
   "The root directory that all the extra plugin will put in")
 
 
