@@ -27,3 +27,4 @@ README.W32
 .emacs.d/.emacs-places
 .emacs.d/recentf
 /.emacs.d/server/server
+.emacs.d/auto-save-list
