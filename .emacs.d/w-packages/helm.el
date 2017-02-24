@@ -6,7 +6,8 @@
 
 (use-package recentf
   :config
-  (recentf-mode 1))
+  (recentf-mode 1)
+  (add-to-list 'recentf-exclude "//reddog"))
 
 (use-package helm
   :config
