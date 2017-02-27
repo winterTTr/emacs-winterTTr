@@ -91,6 +91,7 @@
 (setq save-interprogram-paste-before-kill t)
 (setq x-select-enable-clipboard t)
 (setq select-active-regions 'only)
+(delete-selection-mode 1)
 
 
 ;; set default mode to text-mode, seems useless.
