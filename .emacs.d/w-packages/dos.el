@@ -1,6 +1,7 @@
 ;; -*- coding: utf-8 -*-
-(use-package dos
-  :mode 
-  (("\\.bat$" . dos-mode)
-   ("\\.cmd$" . dos-mode)))
+
+(w/plugin:prepend-to-load-path "dos")
+(add-to-list 'auto-mode-alist '("\\.bat\\'" . dos-mode))
+(add-to-list 'auto-mode-alist '("\\.cmd\\'" . dos-mode))
+
 
