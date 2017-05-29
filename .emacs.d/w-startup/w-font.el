@@ -17,8 +17,12 @@
  (w/os:windowsp
   (defconst w/font:default-font-size 15)
   (defconst w/font:ascii-font-candidates
-    '("Cousine" "Menlo" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas"))
-  ))
+    '("Cousine" "Menlo" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas")))
+ (w/os:linuxp
+  (defconst w/font:default-font-size 15)
+  (defconst w/font:ascii-font-candidates
+    '("Cousine" "Menlo" "WenQuanYi Micro Hei Mono" "文泉驿等宽微米黑" "Consolas")))
+ )
 
 
 (defun w/font:existp (font-name)
